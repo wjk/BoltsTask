@@ -1,15 +1,12 @@
 # BoltsTask
 
-[![CI Status](http://img.shields.io/travis/William Kent/BoltsTask.svg?style=flat)](https://travis-ci.org/William Kent/BoltsTask)
 [![Version](https://img.shields.io/cocoapods/v/BoltsTask.svg?style=flat)](http://cocoadocs.org/docsets/BoltsTask)
 [![License](https://img.shields.io/cocoapods/l/BoltsTask.svg?style=flat)](http://cocoadocs.org/docsets/BoltsTask)
 [![Platform](https://img.shields.io/cocoapods/p/BoltsTask.svg?style=flat)](http://cocoadocs.org/docsets/BoltsTask)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+
+All dependencies are installed using CocoaPods.
 
 ## Installation
 
@@ -20,9 +17,11 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-William Kent, wjk011@gmail.com
+* William Kent, <https://github.com/wjk>
+* [Bolts Framework contributors](https://github.com/BoltsFramework/Bolts-iOS/graphs/contributors)
 
 ## License
 
-BoltsTask is available under the MIT license. See the LICENSE file for more info.
+BoltsTask is available under the BSD license, with an additional patent grant.
+See the LICENSE and PATENTS files for more info.
 

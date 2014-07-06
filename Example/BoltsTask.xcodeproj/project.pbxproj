@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FE9301D1969FC6700280656 /* BoltsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9301C1969FC6700280656 /* BoltsTask.m */; };
+		1F37F1F91969FD6B00CB73B5 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		F9A9E4FD317A432586DF9B1F /* libPods-BoltsTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D033846A572645A199C6CCD0 /* libPods-BoltsTask.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0231157E465B47979DFDD503 /* Pods-BoltsTask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoltsTask.xcconfig"; path = "Pods/Pods-BoltsTask.xcconfig"; sourceTree = "<group>"; };
 		1FE930181969FC6700280656 /* BoltsTask.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoltsTask.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FE9301B1969FC6700280656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FE9301C1969FC6700280656 /* BoltsTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoltsTask.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BoltsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoltsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,29 +41,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FE930191969FC6700280656 /* BoltsTask */ = {
-			isa = PBXGroup;
-			children = (
-				1FE9301C1969FC6700280656 /* BoltsTask.m */,
-				1FE9301A1969FC6700280656 /* Supporting Files */,
-			);
-			path = BoltsTask;
-			sourceTree = "<group>";
-		};
-		1FE9301A1969FC6700280656 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1FE9301B1969FC6700280656 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
-				1FE930191969FC6700280656 /* BoltsTask */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0231157E465B47979DFDD503 /* Pods-BoltsTask.xcconfig */,
@@ -133,7 +113,6 @@
 				1FE930141969FC6700280656 /* Sources */,
 				1FE930151969FC6700280656 /* Frameworks */,
 				1FE930161969FC6700280656 /* Resources */,
-				B61934E7D1F6467FA021D135 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,21 +182,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B61934E7D1F6467FA021D135 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BoltsTask-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,7 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE9301D1969FC6700280656 /* BoltsTask.m in Sources */,
+				1F37F1F91969FD6B00CB73B5 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +217,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BoltsTask/Info.plist;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -277,9 +241,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BoltsTask/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

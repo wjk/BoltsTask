@@ -4,6 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/BoltsTask.svg?style=flat)](http://cocoadocs.org/docsets/BoltsTask)
 [![Platform](https://img.shields.io/cocoapods/p/BoltsTask.svg?style=flat)](http://cocoadocs.org/docsets/BoltsTask)
 
+BoltsTask is a small library that contains the `BFTask`
+class from the Bolts framework. All unneeded iOS-specific
+code has been removed; only `BFTask` and its dependencies
+are included in this pod. This pod is compatible with OS X Mavericks and later.
+
 ## Requirements
 
 All dependencies are installed using CocoaPods.

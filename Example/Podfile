@@ -1,7 +1,3 @@
-
 target 'BoltsTask', :exclusive => true do
   pod "BoltsTask", :path => "../"
-
-  pod 'Specta', '~> 0.2.1'
-  pod 'Expecta'
 end

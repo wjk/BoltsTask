@@ -1,36 +1,18 @@
-#
-# Be sure to run `pod lib lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "BoltsTask"
   s.version          = "0.1.0"
-  s.summary          = "A short description of BoltsTask."
+  s.summary          = "BFTask ported to OS X."
   s.description      = <<-DESC
-                       An optional longer description of BoltsTask
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       This pod is a small part of the Bolts Framework,
+                       modified to strip out all unneeded iOS-specific code.
+                       Only `BFTask` and its dependencies are included.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BoltsTask"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "William Kent" => "wjk011@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BoltsTask.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = "https://github.com/wjk/BoltsTask"
+  s.license          = 'BSD'
+  s.author           = { "William Kent" => "https://github.com/wjk" }
+  s.source           = { :git => "https://github.com/wjk/BoltsTask.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
-
+  s.platform     = :osx, '10.9'
   s.source_files = 'Pod/Classes'
-  s.resources = 'Pod/Assets/*.png'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc = true
 end

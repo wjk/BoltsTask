@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.author           = { "William Kent" => "https://github.com/wjk" }
   s.source           = { :git => "https://github.com/wjk/BoltsTask.git", :tag => s.version.to_s }
 
-  s.platform     = :osx, '10.9'
   s.source_files = 'Pod/Classes'
   s.requires_arc = true
 end
